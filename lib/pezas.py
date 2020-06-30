@@ -6,6 +6,8 @@ class Peza:
         self.x = x
         self.y = y
         self.special = None
+
+        #Parseo de movimientos.
         self.moves = self.movimientos.split(",")
         for i, value in enumerate(self.moves):
             self.moves[i] = [int(value[:2]), int(value[2:])]
